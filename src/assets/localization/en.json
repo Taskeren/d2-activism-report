@@ -23,6 +23,8 @@
     "mercy": "Mercy",
     "timerFinished": "Timer Finished",
     "victory": "Victory",
-    "defeat": "Defeat"
+    "defeat": "Defeat",
+    "victory.mercy": "Victory (Mercy)",
+    "defeat.mercy": "Defeat (Mercy)"
   }
 }

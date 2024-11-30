@@ -23,6 +23,8 @@
     "mercy": "仁慈",
     "timerFinished": "计时结束",
     "victory": "胜利",
-    "defeat": "失败"
+    "defeat": "失败",
+    "victory.mercy": "胜利（仁慈）",
+    "defeat.mercy": "失败（仁慈）"
   }
 }
