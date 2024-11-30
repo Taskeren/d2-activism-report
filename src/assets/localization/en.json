@@ -1,0 +1,26 @@
+{
+  "elapsed_duration": {
+    "recent": "Recent",
+    "second": "{0} Seconds",
+    "minute": "{0} Minutes",
+    "hour": "{0} Hours",
+    "day": "{0} Days",
+    "month": "{0} Months",
+    "year": "{0} Years"
+  },
+  "activity_highlight": {
+    "flawless": "Flawless",
+    "kills": "Kills",
+    "kd": "K/D",
+    "kda": "K/D/A",
+    "avg_kd": "Avg. K/D",
+    "avg_kda": "Avg. K/D/A"
+  },
+  "activity": {
+    "completed": "Completed",
+    "incomplete": "Incomplete",
+    "failed": "Failed",
+    "mercy": "Mercy",
+    "timerFinished": "Timer Finished"
+  }
+}

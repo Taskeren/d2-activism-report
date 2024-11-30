@@ -1,0 +1,26 @@
+{
+  "elapsed_duration": {
+    "recent": "最近",
+    "second": "{0} 秒",
+    "minute": "{0} 分钟",
+    "hour": "{0} 小时",
+    "day": "{0} 天",
+    "month": "{0} 月",
+    "year": "{0} 年"
+  },
+  "activity_highlight": {
+    "flawless": "无暇",
+    "kills": "击杀",
+    "kd": "K/D",
+    "kda": "K/D/A",
+    "avg_kd": "Avg. K/D",
+    "avg_kda": "Avg. K/D/A"
+  },
+  "activity": {
+    "completed": "完成",
+    "incomplete": "未完成",
+    "failed": "失败",
+    "mercy": "仁慈",
+    "timerFinished": "计时结束"
+  }
+}
