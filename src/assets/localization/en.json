@@ -20,11 +20,13 @@
     "completed": "Completed",
     "incomplete": "Incomplete",
     "failed": "Failed",
-    "mercy": "Mercy",
     "timerFinished": "Timer Finished",
     "victory": "Victory",
     "defeat": "Defeat",
-    "victory.mercy": "Victory (Mercy)",
-    "defeat.mercy": "Defeat (Mercy)"
+    "mercy": {
+      "unknown": "Mercy",
+      "victory": "Victory (Mercy)",
+      "defeat": "Defeat (Mercy)"
+    }
   }
 }

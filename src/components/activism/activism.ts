@@ -40,9 +40,9 @@ export function digestActivityHistories(data: ActivismGetHistory): HistoryViewDa
           completionState = "activity.failed"
         } else if (value === 4) {
           if(history.values.standing !== undefined) {
-            completionState = history.values.standing.basic.value === 0 ? "activity.victory.mercy" : "activity.defeat.mercy"
+            completionState = history.values.standing.basic.value === 0 ? "activity.mercy.victory" : "activity.mercy.defeat"
           } else {
-            completionState = "activity.mercy"
+            completionState = "activity.mercy.unknown"
           }
         } else {
           completionState = `activity.unknown.${value}`
