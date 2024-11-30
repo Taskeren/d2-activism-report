@@ -13,8 +13,8 @@
     "kills": "击杀",
     "kd": "K/D",
     "kda": "K/D/A",
-    "avg_kd": "Avg. K/D",
-    "avg_kda": "Avg. K/D/A"
+    "avg_kd": "平均 K/D",
+    "avg_kda": "平均 K/D/A"
   },
   "activity": {
     "completed": "完成",

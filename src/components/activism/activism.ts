@@ -195,7 +195,7 @@ function injectGroupHighlights(histories: TempObjectHistoryData[], highlights: H
 
     const averageKDA = averageOf(histories, h => h.values.killsDeathsAssists.basic.value)
     if(averageKDA > 1.5) {
-      highlights.push({ name: "avg_kda", value: averageKDA })
+      highlights.push({ name: "avg_kda", value: numToStr(averageKDA) })
     }
   }
 
