@@ -29,7 +29,11 @@ export function digestActivityHistories(data: ActivismGetHistory): HistoryViewDa
       if (history.values.completionReason && history.values.completionReason.basic.value !== 255) {
         const value = history.values.completionReason.basic.value
         if (value === 0) {
-          completionState = "activity.completed"
+          if(history.values.standing !== undefined) {
+            completionState = history.values.standing.basic.value === 0 ? "activity.victory" : "activity.defeat"
+          } else {
+            completionState = "activity.completed"
+          }
         } else if (value === 1) {
           completionState = "activity.timerFinished"
         } else if (value === 2) {

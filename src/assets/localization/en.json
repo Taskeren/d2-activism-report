@@ -21,6 +21,8 @@
     "incomplete": "Incomplete",
     "failed": "Failed",
     "mercy": "Mercy",
-    "timerFinished": "Timer Finished"
+    "timerFinished": "Timer Finished",
+    "victory": "Victory",
+    "defeat": "Defeat"
   }
 }

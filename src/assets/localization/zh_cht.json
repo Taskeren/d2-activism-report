@@ -21,6 +21,8 @@
     "incomplete": "未完成",
     "failed": "失敗",
     "mercy": "慈悲",
-    "timerFinished": "計時結束"
+    "timerFinished": "計時結束",
+    "victory": "勝利",
+    "defeat": "失敗"
   }
 }
