@@ -1,4 +1,3 @@
-import { makeHttpClient } from "~/server/bungie-api-facilities"
 import {
 	BungieMembershipType,
 	searchByGlobalNamePost,

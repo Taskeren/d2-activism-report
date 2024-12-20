@@ -1,6 +1,6 @@
 <script setup lang="ts">
 
-import type { UserInfoCard, UserSearchResponseDetail } from "bungie-api-ts/user"
+import type { UserInfoCard } from "bungie-api-ts/user"
 
 const { setLocale } = useI18n()
 

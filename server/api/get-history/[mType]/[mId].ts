@@ -1,10 +1,10 @@
 import { getCharacterActivityHistoryInTime } from "~/server/bungie-api-wrapper"
-import { makeHttpClient } from "~/server/bungie-api-facilities"
 import {
 	DestinyCharacterComponent,
 	DestinyComponentType,
 	DestinyHistoricalStatsPeriodGroup,
-	DestinyInventoryItemDefinition, DestinyProfileComponent,
+	DestinyInventoryItemDefinition,
+	DestinyProfileComponent,
 	getDestinyEntityDefinition,
 	getProfile,
 } from "bungie-api-ts/destiny2"
