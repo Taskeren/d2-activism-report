@@ -1,0 +1,39 @@
+{
+  "side_name": "Activism Report",
+  "loading_text": "Loading Histories...",
+  "error": {
+    "unknown": "Unknown Error!",
+    "privacy_restriction": "Privacy Restriction! Unable to fetch.",
+    "empty_data": "Empty Data."
+  },
+  "elapsed_duration": {
+    "recent": "Recent",
+    "second": "{0} Seconds",
+    "minute": "{0} Minutes",
+    "hour": "{0} Hours",
+    "day": "{0} Days",
+    "month": "{0} Months",
+    "year": "{0} Years"
+  },
+  "highlight": {
+    "flawless": "Flawless",
+    "kills": "Kills",
+    "kd": "K/D",
+    "kda": "K/D/A",
+    "avg_kd": "Avg. K/D",
+    "avg_kda": "Avg. K/D/A"
+  },
+  "activity_completion": {
+    "completed": "Completed",
+    "incomplete": "Incomplete",
+    "failed": "Failed",
+    "timerFinished": "Timer Finished",
+    "victory": "Victory",
+    "victory_mercy": "Victory (Mercy)",
+    "victory_timerFinished": "Victory (Timer Finished)",
+    "defeat": "Defeat",
+    "defeat_mercy": "Defeat (Mercy)",
+    "defeat_timerFinished": "Defeat (Timer Finished)",
+    "mercy": "Mercy"
+  }
+}

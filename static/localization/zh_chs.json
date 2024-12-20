@@ -1,0 +1,39 @@
+{
+  "side_name": "Activism Report",
+  "loading_text": "正在加载历史记录……",
+  "error": {
+    "unknown": "未知错误！",
+    "privacy_restriction": "隐私限制！无法获取。",
+    "empty_data": "空数据。"
+  },
+  "elapsed_duration": {
+    "recent": "最近",
+    "second": "{0} 秒",
+    "minute": "{0} 分钟",
+    "hour": "{0} 小时",
+    "day": "{0} 天",
+    "month": "{0} 月",
+    "year": "{0} 年"
+  },
+  "highlight": {
+    "flawless": "无暇",
+    "kills": "击杀",
+    "kd": "K/D",
+    "kda": "K/D/A",
+    "avg_kd": "平均 K/D",
+    "avg_kda": "平均 K/D/A"
+  },
+  "activity_completion": {
+    "completed": "完成",
+    "incomplete": "未完成",
+    "failed": "失败",
+    "timerFinished": "计时结束",
+    "victory": "胜利",
+    "victory_mercy": "胜利（仁慈）",
+    "victory_timerFinished": "胜利（超时）",
+    "defeat": "失败",
+    "defeat_mercy": "失败（仁慈）",
+    "defeat_timerFinished": "失败（超时）",
+    "mercy": "仁慈"
+  }
+}

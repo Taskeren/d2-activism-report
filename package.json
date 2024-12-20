@@ -6,21 +6,25 @@
     "build": "nuxt build",
     "dev": "nuxt dev",
     "generate": "nuxt generate",
-    "preview": "pnpm run build && wrangler pages dev",
+    "preview": "npm run build && wrangler pages dev",
     "postinstall": "nuxt prepare",
-    "deploy": "pnpm run build && wrangler pages deploy",
+    "deploy": "npm run build && wrangler pages deploy",
     "cf-typegen": "wrangler types"
   },
   "dependencies": {
+    "@nuxt/ui": "2.19.2",
+    "@nuxtjs/i18n": "^9.0.0-rc.2",
+    "bungie-api-ts": "^5.1.0",
     "nuxt": "^3.14.1592",
     "vue": "latest",
     "vue-router": "latest"
   },
-  "packageManager": "pnpm@8.6.11+sha512.8ea927a69ba3e39b43cc9b0b70baa4031cad047657231f494d890636ad3fee9491820a62a3dc11c530e3e0d0368a53873e52790558c1e488f9771eb9c28322e4",
   "devDependencies": {
     "@cloudflare/workers-types": "^4.20241127.0",
+    "babel-plugin-const-enum": "^1.2.0",
     "h3": "^1.13.0",
     "nitro-cloudflare-dev": "^0.2.1",
     "wrangler": "^3.91.0"
-  }
+  },
+  "packageManager": "npm@9.8.1"
 }
