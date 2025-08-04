@@ -9,7 +9,8 @@
     "preview": "npm run build && wrangler dev",
     "postinstall": "nuxt prepare",
     "deploy": "npm run build && wrangler deploy",
-    "cf-typegen": "wrangler types"
+    "cf-typegen": "wrangler types",
+    "regen-i18n": "node scripts/generate-i18n.js"
   },
   "dependencies": {
     "@nuxt/ui": "2.19.2",
@@ -22,6 +23,7 @@
   "devDependencies": {
     "@cloudflare/workers-types": "^4.20241127.0",
     "babel-plugin-const-enum": "^1.2.0",
+    "dotenv": "^17.2.1",
     "h3": "^1.13.0",
     "nitro-cloudflare-dev": "^0.2.1",
     "nitropack": "^2.12.4",
