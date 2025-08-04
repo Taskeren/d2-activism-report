@@ -4,7 +4,12 @@ export default defineNuxtConfig({
 	devtools: { enabled: true },
 
 	nitro: {
-		preset: "cloudflare-pages",
+		preset: "cloudflare_module",
+
+		cloudflare: {
+			deployConfig: true,
+			nodeCompat: true
+		}
 	},
 
 	modules: ["nitro-cloudflare-dev", "@nuxt/ui", "@nuxtjs/i18n"],

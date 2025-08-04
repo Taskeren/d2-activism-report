@@ -6,9 +6,9 @@
     "build": "nuxt build",
     "dev": "nuxt dev",
     "generate": "nuxt generate",
-    "preview": "npm run build && wrangler pages dev",
+    "preview": "npm run build && wrangler dev",
     "postinstall": "nuxt prepare",
-    "deploy": "npm run build && wrangler pages deploy",
+    "deploy": "npm run build && wrangler deploy",
     "cf-typegen": "wrangler types"
   },
   "dependencies": {
@@ -24,6 +24,7 @@
     "babel-plugin-const-enum": "^1.2.0",
     "h3": "^1.13.0",
     "nitro-cloudflare-dev": "^0.2.1",
+    "nitropack": "^2.12.4",
     "wrangler": "^3.91.0"
   },
   "packageManager": "npm@9.8.1"
