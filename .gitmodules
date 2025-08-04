@@ -1,0 +1,3 @@
+[submodule "i18n-generator"]
+	path = i18n-generator
+	url = git@github.com:Taskeren/d2-localization-generator.git
