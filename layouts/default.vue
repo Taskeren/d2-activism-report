@@ -50,7 +50,7 @@ function jumpToUser(mType: number, mId: string) {
 <template>
 	<header class="px-6 bg-black flex flex-wrap align-middle items-center text-white gap-x-4">
 		<NuxtLink to="/" class="text-2xl my-5 mr-4 hover:underline align-middle">
-			<h1 class="font-mono">{{ $t("side_name") }} (Nuxt Alpha Test)</h1>
+			<h1 class="font-mono">{{ $t("side_name") }}</h1>
 		</NuxtLink>
 		<div class="relative w-[24em]">
 			<input type="text" class="p-2 w-full rounded-md z-2 text-black"
