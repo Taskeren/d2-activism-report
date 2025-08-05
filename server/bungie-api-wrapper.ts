@@ -26,6 +26,7 @@ export async function getCharacterActivityHistoryInTime(cli: HttpClient, members
 		}
 
 		const activities = resp.Response.activities
+		if(activities == undefined || activities.length == 0) break // something went wrong, no activities found, time to break
 		const activities_filtered = activities.filter(act => {
 			const thisTime = new Date(act.period)
 			return thisTime.getTime() >= sentinelTime.getTime() // must be later than the sentinel time
