@@ -25,7 +25,7 @@ export async function getCharacterActivityHistoryInTime(cli: HttpClient, members
 			})
 		}
 
-		const activities = resp.Response.activities
+		const activities = resp.Response.activities ?? []
 		const activities_filtered = activities.filter(act => {
 			const thisTime = new Date(act.period)
 			return thisTime.getTime() >= sentinelTime.getTime() // must be later than the sentinel time
