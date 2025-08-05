@@ -73,10 +73,18 @@ export default defineEventHandler(async (event) => {
 
 	// aggregate activity histories
 	const histories: DestinyHistoricalStatsPeriodGroup[] = []
-	const characterIds = Object.keys(characters)
-	for await(const cId of characterIds) {
-		const characterHistories = await getCharacterActivityHistoryInTime(client, mTypeNum, mId, cId, sentinelDate)
-		histories.push(...characterHistories)
+	try {
+		const characterIds = Object.keys(characters)
+		for await(const cId of characterIds) {
+			const characterHistories = await getCharacterActivityHistoryInTime(client, mTypeNum, mId, cId, sentinelDate)
+			histories.push(...characterHistories)
+		}
+	} catch(e: any) {
+		console.error(e)
+		throw createError({
+			statusCode: 500,
+			statusMessage: "Failed to fetch activity histories",
+		})
 	}
 	histories.sort((a, b) => new Date(b.period).getTime() - new Date(a.period).getTime())
 
