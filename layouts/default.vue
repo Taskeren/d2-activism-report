@@ -17,10 +17,10 @@ async function execSearch() {
 
 	const filteredData = data.filter(x => x.crossSaveOverride === 0 || x.crossSaveOverride === x.membershipType)
 
-	if(filteredData.length === 1) {
+	if (filteredData.length === 1) {
 		const singleton = filteredData[0]
 		jumpToUser(singleton.membershipType, singleton.membershipId)
-	} else if(filteredData.length > 1) {
+	} else if (filteredData.length > 1) {
 		userData.value = filteredData
 		showPopup.value = true
 	} else {
@@ -40,7 +40,7 @@ function jumpToUser(mType: number, mId: string) {
 	console.log("Jump to User", mType, mId)
 	useRouter().push({
 		name: "mType-mId",
-		params: { mType, mId }
+		params: { mType, mId },
 	})
 	showPopup.value = false
 }
@@ -56,10 +56,15 @@ function jumpToUser(mType: number, mId: string) {
 			<input type="text" class="p-2 w-full rounded-md z-2 text-black"
 						 placeholder="Search for a player" v-model="searchName" @keydown.enter="execSearch">
 		</div>
-		<nav class="flex gap-x-4 flex-wrap my-5 pl-2 mr-2">
-			<button @click="setLocale('en')">English</button>
-			<button @click="setLocale('zh_chs')">简体中文</button>
-			<button @click="setLocale('zh_cht')">繁體中文</button>
+		<nav class="flex gap-x-4 flex-wrap flex-grow justify-between my-5 pl-2 mr-2">
+			<div class="flex items-center gap-x-4">
+				<button @click="setLocale('en')">English</button>
+				<button @click="setLocale('zh_chs')">简体中文</button>
+				<button @click="setLocale('zh_cht')">繁體中文</button>
+			</div>
+			<div class="flex items-center gap-x-4">
+				<a href="https://github.com/Taskeren/d2-activism-report" target="_blank">GitHub</a>
+			</div>
 		</nav>
 	</header>
 	<main>
@@ -71,7 +76,8 @@ function jumpToUser(mType: number, mId: string) {
 		<div class="w-1/2 xl:w-1/4 h-3/4 xl:h-1/2 p-4 xl:p-12 bg-white overflow-auto">
 			<div class="grid grid-cols-1 xl:grid-cols-4 items-center gap-1">
 				<button @click="showPopup = false">Close</button>
-				<button v-for="(d, idx) in userData" :key="idx" @click="jumpToUser(d.membershipType, d.membershipId)" class="text-center hover:underline">
+				<button v-for="(d, idx) in userData" :key="idx" @click="jumpToUser(d.membershipType, d.membershipId)"
+								class="text-center hover:underline">
 					{{ d.bungieGlobalDisplayName }}#{{ _numTo4Str(d.bungieGlobalDisplayNameCode ?? -1) }}
 				</button>
 			</div>
@@ -83,6 +89,7 @@ function jumpToUser(mType: number, mId: string) {
 html, body, #__nuxt {
 	height: 100%;
 }
+
 body {
 	@apply bg-slate-900;
 }
