@@ -54,7 +54,7 @@ function jumpToUser(mType: number, mId: string) {
 		</NuxtLink>
 		<div class="relative w-[24em]">
 			<input type="text" class="p-2 w-full rounded-md z-2 text-black"
-						 placeholder="Search for a player" v-model="searchName" @keydown.enter="execSearch">
+						 :placeholder="$t('search_placeholder')" v-model="searchName" @keydown.enter="execSearch">
 		</div>
 		<nav class="flex gap-x-4 flex-wrap flex-grow justify-between my-5 pl-2 mr-2">
 			<div class="flex items-center gap-x-4">
