@@ -1,0 +1,33 @@
+name: Regenerate I18n
+on:
+  workflow_dispatch:
+
+concurrency:
+  group: 'update-i18n'
+  cancel-in-progress: true
+
+jobs:
+  regen:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6
+        with:
+          submodules: 'true'
+      - name: Setup NodeJS
+        uses: actions/setup-node@v6
+        with:
+          node-version: '20'
+      - name: Run regenerate
+        run: |
+          npm install
+          npm run regen-i18n
+        env:
+          BUNGIE_API_KEY: ${{ secrets.BUNGIE_API_TOKEN }}
+      - name: Open Pull Request
+        uses: peter-evans/create-pull-request@v8
+        with:
+          commit-message: 'Update I18n'
+          title: '[Regenerate-I18n] ${{ github.ref }}'
+          branch: 'i18n/${{ github.sha }}'
+          token: ${{ secrets.GITHUB_TOKEN }}
