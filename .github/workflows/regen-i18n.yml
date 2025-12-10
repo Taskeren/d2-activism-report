@@ -6,6 +6,10 @@ concurrency:
   group: 'update-i18n'
   cancel-in-progress: true
 
+permissions:
+  contents: write
+  pull-requests: write
+
 jobs:
   regen:
     runs-on: ubuntu-latest
