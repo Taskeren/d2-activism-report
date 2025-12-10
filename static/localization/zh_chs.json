@@ -1,5 +1,6 @@
 {
   "side_name": "Activism Report",
+  "search_placeholder": "查询一名玩家",
   "loading_text": "正在加载历史记录……",
   "error": {
     "unknown": "未知错误！",

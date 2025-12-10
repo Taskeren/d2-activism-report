@@ -1,5 +1,6 @@
 {
   "side_name": "Activism Report",
+  "search_placeholder": "Search for a player",
   "loading_text": "Loading Histories...",
   "error": {
     "unknown": "Unknown Error!",
