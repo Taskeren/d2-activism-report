@@ -17,15 +17,6 @@ export async function getCharacterActivityHistoryInTime(cli: HttpClient, members
 
 		// check success
 		if(resp.ErrorCode !== 1) {
-			if(resp.ErrorStatus === "DestinyPrivacyRestriction") {
-				// the user has its data private
-				throw createError({
-					statusCode: 403,
-					statusMessage: `Privacy Error`,
-					data: resp,
-				})
-			}
-
 			console.error(resp)
 			throw createError({
 				statusCode: 500,

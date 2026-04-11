@@ -9,6 +9,7 @@ import {
 	getProfile,
 } from "bungie-api-ts/destiny2"
 import { BungieHttpClient } from "~/server/api/bungie_api"
+import { H3Error } from "h3"
 
 export default defineEventHandler(async (event) => {
 	const client = BungieHttpClient
@@ -80,6 +81,11 @@ export default defineEventHandler(async (event) => {
 			histories.push(...characterHistories)
 		}
 	} catch(e: any) {
+		// rethrow H3Error directly
+		if(e instanceof H3Error) {
+			throw e
+		}
+
 		console.error(e)
 		throw createError({
 			statusCode: 500,
