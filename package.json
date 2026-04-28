@@ -13,7 +13,7 @@
     "regen-i18n": "node scripts/generate-i18n.js"
   },
   "dependencies": {
-    "@nuxt/ui": "2.22.3",
+    "@nuxt/ui": "4.7.1",
     "@nuxtjs/i18n": "^9.0.0-rc.2",
     "bungie-api-ts": "^5.1.0",
     "nuxt": "^3.14.1592",
