@@ -21,7 +21,7 @@
     "vue-router": "latest"
   },
   "devDependencies": {
-    "@cloudflare/workers-types": "^4.20241127.0",
+    "@cloudflare/workers-types": "^5.0.0",
     "babel-plugin-const-enum": "^1.2.0",
     "dotenv": "^17.2.1",
     "h3": "^1.13.0",
